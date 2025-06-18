@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 2 - Contact Form & To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <nav>
+            <h2>Navigation</h2>
+            <p>Links or Menu</p>
+        </nav>
+
+        <main>
+            <section class="form-section">
+                <h2>Contact Form</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <section class="todo-section">
+                <h2>To-Do List</h2>
+                <input type="text" id="taskInput" placeholder="Enter a task">
+                <button onclick="addTask()">Add Task</button>
+                <ul id="taskList"></ul>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Sidebar</h2>
+            <p>Additional content</p>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
